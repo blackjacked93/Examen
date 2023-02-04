@@ -1,0 +1,232 @@
+
+
+*{
+    margin: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    text-align: justify;
+    padding: 0px 5px;
+    color: white;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: slateblue;
+}
+
+.header{
+
+    display: flex;
+    flex-direction: column;
+    background: url("../imgs/Halo\ Reach.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenedor .menu{
+   
+    background-color: teal;
+    display: flex;
+    flex-direction: row;
+    height: 60px;  /* 60px */
+    align-items: center;
+
+    border-bottom: 1px rgba(255,255,255, 0.5) solid;
+
+}
+.contenedor .logo{
+ 
+    flex: 1 1 auto;
+
+}
+
+.contenedor .logo a{
+    color:white;
+}
+.contenedor .nav{
+   
+    flex: 5 1 auto;
+}
+.contenedor .social{
+   
+    flex: 1 1 auto;
+ 
+   display: flex;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
+
+.contenedor .principal{
+
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h1{
+    color: #f7f7f7;
+}
+h2{
+    color: azure;
+}
+
+.contenedor h1 {
+ 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color:white;
+
+    font-weight: bold;
+    text-align: center;
+}
+.section{
+    display: flex;
+}
+
+.section .articulos {
+    background: #f7f7f7;
+   
+    flex: 2 1 auto;
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+h2{
+    font-size:1.2em;
+    text-transform: uppercase;
+    padding: 0px 0px 10px 0px;
+}
+
+.section .article{
+  
+   color:#444;
+   font-size: 1em;
+    flex: 2 2 30%;
+    margin: 10px 10px 0px 0px;
+}
+
+.section .articulos{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.article img {
+    width: 100%;
+}
+
+.article a{
+    color: tomato;
+    margin: 10px 0px;
+    display:grid ;
+}
+.section .navegacion {
+    flex: 1 1 100%;
+}
+
+.section .aside{
+    flex: 1 1 auto;
+    width: 100%;
+    background-color: blueviolet;
+}
+.aside img {
+    
+    width: 90%;
+    align-items: center;
+}
+
+h4{
+    background: black;
+    color:white;
+    padding: 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    text-align: center;
+}
+
+.footer .pie{
+    width: 300px;
+}
+
+.formulario{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    flex-direction: column;
+
+}
+
+
+@media screen and (max-width:800px){
+    .section{
+        flex-direction: column;
+    }
+    .contenedor .menu {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .logo{
+        width: 100%;
+    }
+    .contenedor .nav {
+        width:100%;
+    }
+    .contenedor .social{
+        width: 100%;
+    }
+    .aside{
+        display:flex;
+        justify-content: center;
+    }
+    .aside .publicidad{
+        width: 50%;
+    }
+    .formulario{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+        .section .articulos{
+            flex-direction: column;
+        }     
+}
+
+@media screen and (max-width:500px){
+    .aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }   
+    .aside .publicidad {
+        width:auto;
+    }   
+}
+
